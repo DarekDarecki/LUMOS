@@ -1,0 +1,6 @@
+D:\projects\LUMOS\LUMOS\bin\LUMOS.dll.config
+D:\projects\LUMOS\LUMOS\bin\LUMOS.dll
+D:\projects\LUMOS\LUMOS\bin\LUMOS.pdb
+D:\projects\LUMOS\LUMOS\obj\Debug\LUMOS.csprojResolveAssemblyReference.cache
+D:\projects\LUMOS\LUMOS\obj\Debug\LUMOS.dll
+D:\projects\LUMOS\LUMOS\obj\Debug\LUMOS.pdb
