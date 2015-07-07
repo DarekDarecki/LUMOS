@@ -63,6 +63,7 @@
     <Content Include="images\58.jpg" />
     <Content Include="images\61.jpg" />
     <Content Include="images\84.jpg" />
+    <Content Include="images\lol.png" />
     <Content Include="images\slide1.jpg" />
     <Content Include="images\slide3.jpg" />
     <Content Include="images\slide5.jpg" />
@@ -108,19 +109,7 @@
     <Content Include="images\WP_20150217_033.ogv" />
     <Content Include="stylesheets\bootstrap\bootstrap-theme.css.map" />
     <Content Include="stylesheets\bootstrap\bootstrap.css.map" />
-    <Content Include="stylesheets\font-awesome\font-awesome.scss" />
-    <Content Include="stylesheets\font-awesome\_animated.scss" />
-    <Content Include="stylesheets\font-awesome\_bordered-pulled.scss" />
-    <Content Include="stylesheets\font-awesome\_core.scss" />
-    <Content Include="stylesheets\font-awesome\_fixed-width.scss" />
-    <Content Include="stylesheets\font-awesome\_icons.scss" />
-    <Content Include="stylesheets\font-awesome\_larger.scss" />
-    <Content Include="stylesheets\font-awesome\_list.scss" />
-    <Content Include="stylesheets\font-awesome\_mixins.scss" />
-    <Content Include="stylesheets\font-awesome\_path.scss" />
-    <Content Include="stylesheets\font-awesome\_rotated-flipped.scss" />
-    <Content Include="stylesheets\font-awesome\_stacked.scss" />
-    <Content Include="stylesheets\font-awesome\_variables.scss" />
+    <Content Include="fonts\lumos.ttf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

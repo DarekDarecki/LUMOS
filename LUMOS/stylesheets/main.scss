@@ -1,5 +1,16 @@
-﻿@import "variables";
+@import "variables";
 
+@font-face {
+    font-family: 'lumos';
+    src: url('../fonts/lumos.ttf') format('truetype');
+}
+@mixin translate($x, $y){
+    -webkit-transform:translate($x,$y);
+    -moz-transform:translate($x,$y);
+    -ms-transform:translate($x,$y);
+    -o-transform:translate($x,$y);
+    transform:translate($x,$y);
+}
 body {
     overflow-x: hidden;
     background: #333;
@@ -9,25 +20,26 @@ body {
 .cover {
     background-color: $black;
     width: 100vw;
-    height: 55.8vw;
     position: absolute;
     z-index: 3;
-    opacity: 0.4;
+    opacity: 0.6;
 }
 
 .wrapper {
     position: relative;
     z-index: 2;
     background-color: transparent;
+    overflow: hidden;
 }
 
 .myVideo {
-    max-width: 100%;
-    width: auto;
-    height: auto;
+    @include translate(-10%,-20%); //jak będzie filmik pobawić się żeby był na środku
+    min-width: 100%;
+    min-height: 100%;
     z-index: -10;
     padding: 0;
     margin: 0;
+    overflow: hidden;
 }
 
 .youtube {
@@ -35,24 +47,42 @@ body {
     z-index: 10;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-58%);
+    @include translate(-50%, -50%);
     position: absolute;
     border: 3px solid $white;
     text-align: center;
     padding: 5px 20px 5px 20px;
     text-decoration: none;
 }
-.youtube:hover{
-        text-decoration: none;
-       background-color:$white;
-       color:$black;
+
+.youtube:hover {
+    text-decoration: none;
+    background-color: $white;
+    color: $black;
 }
 
-.fa-chevron-circle-down{
+.youtube:active {
+    text-decoration: none;
     color: white;
+}
+
+.fa-stack {
+    color: $white;
     z-index: 11;
     position: absolute;
-    top:50px;
+    bottom: 15px;
+    left: 50%;
+    @include translate(-50%, 0);
+    font-size: 33px;
+}
+
+.fa-angle-down {
+    font-size: 50px;
+}
+
+.fa-stack:hover {
+    color: $black;
+    cursor: pointer;
 }
 
 .fixed {
@@ -62,59 +92,135 @@ body {
     width: 100%;
 }
 
-.navbar{
-    margin:0;
-    border-radius:0;
+.navbar {
+    margin: 0;
+    border-radius: 0 !important;
+    height: 70px;
+    background-color: $black;
+    border: none;
+    border-bottom: 3px solid aqua;
+
+    .container-fluid {
+        height: 70px;
+    }
 }
 
-.navbar-inverse .navbar-nav>li>a:focus{
-    color:#9d9d9d;
+.navbar-header {
+    height: 70px;
 }
 
-#slide6{
-	background:url('../images/slide1.jpg') 50% 0 no-repeat fixed;
-	color: #fff;
-	height: 1000px;
-	margin: 0;
-	padding: 300px 0 260px 0;
-	background-size: cover;
+.navbar-collapse {
+    padding: 0;
+    border: none;
+}
+
+.logo {
+    font-family: lumos;
+    font-size: 70px;
+    color: aqua;
+    top: -10px;
+    position: absolute;
+    padding-left: 50px;
+}
+
+#slide6 {
+    background: url('../images/34.jpg') 50% 0 no-repeat fixed;
+    color: #fff;
+    height: 1000px;
+    margin: 0;
+    padding: 300px 0 260px 0;
+    background-size: cover;
     width: 100%;
 }
 
-#slide2{
-	background-color: #fff;
-	color: #333333;
-	height: 500px;
-	margin: -3px auto;
-	overflow: hidden;
-	padding: 0 0 100px;
+#slide2 {
+    background-color: black;
+    color: #333333;
+    margin: -3px auto;
+    overflow: hidden;
+    padding: 0 0 100px;
 }
 
-#slide3{
-	background: url('../images/03.jpg') 50% 0 no-repeat fixed;
-	color: #fff;
-	height: 400px;
-	padding: 170px 0 0 0;	
-	background-size: cover;
+.team img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    float: left;
+    max-width: 100%;
 }
 
-#slide4{
-	background-color: black;
-	color: #333333;
-	height: 200px;
-	padding: 150px;
+.text {
+    overflow: auto;
 }
 
-#slide5{
-	background: url('../images/slide5.jpg') 50% 0 no-repeat fixed;
-	height: 200px;
-	margin: 0 auto;
-	padding: 300px 0;
-	color: #fff;
-	background-size: cover;
+#slide3 {
+    background: url('../images/03.jpg') 50% 0 no-repeat fixed;
+    color: #fff;
+    height: 400px;
+    padding: 170px 0 0 0;
+    background-size: cover;
 }
 
-.active{
-    color:white;
-    font-size:30px;
+#slide4 {
+    background-color: black;
+    color: #333333;
+    height: 200px;
+    padding: 150px;
+}
+
+#slide5 {
+    background: url('../images/61.jpg') 50% 0 no-repeat fixed;
+    height: 200px;
+    margin: 0 auto;
+    padding: 300px 0;
+    color: #fff;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar li a {
+        background-color: $black;
+
+        &:hover {
+            background-color: aqua !important;
+        }
+    }
+
+    .navbar ul {
+        margin: 0;
+        width: 30%;
+        float: right;
+    }
+
+    .navbar li {
+    }
+
+    .navbar-collapse {
+        overflow: hidden;
+        background-color: transparent;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .navbar ul {
+        height: 100%;
+    }
+
+    .navbar li a {
+        line-height: 70px;
+        padding: 0 15px 0 15px;
+    }
+
+    .navbar li a:hover {
+        border-top: 3px solid aqua;
+        line-height: 64px !important;
+        color: aqua !important;
+    }
+
+    .active {
+        border-top: 3px solid aqua;
+        line-height: 64px !important;
+        color: aqua !important;
+    }
 }

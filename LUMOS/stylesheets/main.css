@@ -1,4 +1,8 @@
-﻿body {
+﻿@font-face {
+  font-family: 'lumos';
+  src: url('../fonts/lumos.ttf') format('truetype'); }
+
+body {
   overflow-x: hidden;
   background: #333;
   color: #fff; }
@@ -6,30 +10,39 @@
 .cover {
   background-color: black;
   width: 100vw;
-  height: 55.8vw;
   position: absolute;
   z-index: 3;
-  opacity: 0.4; }
+  opacity: 0.6; }
 
 .wrapper {
   position: relative;
   z-index: 2;
-  background-color: transparent; }
+  background-color: transparent;
+  overflow: hidden; }
 
 .myVideo {
-  max-width: 100%;
-  width: auto;
-  height: auto;
+  -webkit-transform: translate(-10%, -20%);
+  -moz-transform: translate(-10%, -20%);
+  -ms-transform: translate(-10%, -20%);
+  -o-transform: translate(-10%, -20%);
+  transform: translate(-10%, -20%);
+  min-width: 100%;
+  min-height: 100%;
   z-index: -10;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  overflow: hidden; }
 
 .youtube {
   color: white;
   z-index: 10;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -58%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   position: absolute;
   border: 3px solid white;
   text-align: center;
@@ -41,11 +54,29 @@
   background-color: white;
   color: black; }
 
-.fa-chevron-circle-down {
+.youtube:active {
+  text-decoration: none;
+  color: white; }
+
+.fa-stack {
   color: white;
   z-index: 11;
   position: absolute;
-  top: 50px; }
+  bottom: 15px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  font-size: 33px; }
+
+.fa-angle-down {
+  font-size: 50px; }
+
+.fa-stack:hover {
+  color: black;
+  cursor: pointer; }
 
 .fixed {
   position: fixed;
@@ -55,13 +86,31 @@
 
 .navbar {
   margin: 0;
-  border-radius: 0; }
+  border-radius: 0 !important;
+  height: 70px;
+  background-color: black;
+  border: none;
+  border-bottom: 3px solid aqua; }
+  .navbar .container-fluid {
+    height: 70px; }
 
-.navbar-inverse .navbar-nav > li > a:focus {
-  color: #9d9d9d; }
+.navbar-header {
+  height: 70px; }
+
+.navbar-collapse {
+  padding: 0;
+  border: none; }
+
+.logo {
+  font-family: lumos;
+  font-size: 70px;
+  color: aqua;
+  top: -10px;
+  position: absolute;
+  padding-left: 50px; }
 
 #slide6 {
-  background: url('../images/slide1.jpg') 50% 0 no-repeat fixed;
+  background: url('../images/34.jpg') 50% 0 no-repeat fixed;
   color: #fff;
   height: 1000px;
   margin: 0;
@@ -70,12 +119,21 @@
   width: 100%; }
 
 #slide2 {
-  background-color: #fff;
+  background-color: black;
   color: #333333;
-  height: 500px;
   margin: -3px auto;
   overflow: hidden;
   padding: 0 0 100px; }
+
+.team img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  float: left;
+  max-width: 100%; }
+
+.text {
+  overflow: auto; }
 
 #slide3 {
   background: url('../images/03.jpg') 50% 0 no-repeat fixed;
@@ -91,15 +149,47 @@
   padding: 150px; }
 
 #slide5 {
-  background: url('../images/slide5.jpg') 50% 0 no-repeat fixed;
+  background: url('../images/61.jpg') 50% 0 no-repeat fixed;
   height: 200px;
   margin: 0 auto;
   padding: 300px 0;
   color: #fff;
   background-size: cover; }
 
-.active {
-  color: white;
-  font-size: 30px; }
+@media only screen and (max-width: 767px) {
+  .navbar li a {
+    background-color: black; }
+    .navbar li a:hover {
+      background-color: aqua !important; }
+
+  .navbar ul {
+    margin: 0;
+    width: 30%;
+    float: right; }
+
+
+  .navbar-collapse {
+    overflow: hidden;
+    background-color: transparent; }
+ }
+
+@media only screen and (min-width: 768px) {
+  .navbar ul {
+    height: 100%; }
+
+  .navbar li a {
+    line-height: 70px;
+    padding: 0 15px 0 15px; }
+
+  .navbar li a:hover {
+    border-top: 3px solid aqua;
+    line-height: 64px !important;
+    color: aqua !important; }
+
+  .active {
+    border-top: 3px solid aqua;
+    line-height: 64px !important;
+    color: aqua !important; }
+ }
 
 /*# sourceMappingURL=main.css.map */
