@@ -76,10 +76,17 @@
     <Content Include="javascripts\bootstrap\bootstrap.js" />
     <Content Include="javascripts\bootstrap\bootstrap.min.js" />
     <Content Include="javascripts\bootstrap\npm.js" />
+    <Content Include="javascripts\waves.js" />
     <Content Include="stylesheets\bootstrap\bootstrap-theme.css" />
     <Content Include="stylesheets\bootstrap\bootstrap-theme.min.css" />
     <Content Include="stylesheets\bootstrap\bootstrap.css" />
     <Content Include="stylesheets\bootstrap\bootstrap.min.css" />
+    <Content Include="stylesheets\customForm.css">
+      <DependentUpon>customForm.scss</DependentUpon>
+    </Content>
+    <Content Include="stylesheets\customForm.min.css">
+      <DependentUpon>customForm.css</DependentUpon>
+    </Content>
     <Content Include="stylesheets\main.css">
       <DependentUpon>main.scss</DependentUpon>
     </Content>
@@ -91,6 +98,12 @@
     </Content>
     <Content Include="stylesheets\variables.min.css">
       <DependentUpon>variables.css</DependentUpon>
+    </Content>
+    <Content Include="stylesheets\waves.css">
+      <DependentUpon>waves.scss</DependentUpon>
+    </Content>
+    <Content Include="stylesheets\waves.min.css">
+      <DependentUpon>waves.css</DependentUpon>
     </Content>
     <Content Include="Web.config" />
   </ItemGroup>
@@ -110,6 +123,14 @@
     <Content Include="stylesheets\bootstrap\bootstrap-theme.css.map" />
     <Content Include="stylesheets\bootstrap\bootstrap.css.map" />
     <Content Include="fonts\lumos.ttf" />
+    <Content Include="stylesheets\customForm.scss" />
+    <Content Include="stylesheets\customForm.css.map">
+      <DependentUpon>customForm.css</DependentUpon>
+    </Content>
+    <Content Include="stylesheets\waves.scss" />
+    <Content Include="stylesheets\waves.css.map">
+      <DependentUpon>waves.css</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
