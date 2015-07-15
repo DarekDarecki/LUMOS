@@ -100,7 +100,6 @@ body {
     height: 70px;
     background-color: black;
     border: none;
-    border-bottom: 3px solid aqua;
 
     .container-fluid {
         height: 70px;
@@ -170,7 +169,7 @@ body {
 #slide42 {
     background-color: red;
     color: #333333;
-    padding:50px 0 50px 0;
+    padding: 50px 0 50px 0;
 }
 
 #slide5 {
@@ -182,12 +181,13 @@ body {
 #slide6 {
     background: url('../images/34.jpg') 50% 0 no-repeat fixed;
     height: 400px;
-    padding-top:50px;
+    padding-top: 50px;
     background-size: cover;
 }
-#slide7{
-    background-color:black;
-    padding-top:50px;
+
+#slide7 {
+    background-color: black;
+    padding-top: 50px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -221,20 +221,23 @@ body {
     }
 
     .navbar li a {
-        line-height: 70px;
         padding: 0 15px 0 15px;
+        line-height: 65px;
+        border-top: 3px solid transparent;
     }
-/*
-    .navbar li a:hover {
-        border-top: 3px solid aqua;
-        line-height: 64px !important;
-        color: aqua !important;
+
+    .navbar-inverse .navbar-nav > li > a:focus {
+        color: #9d9d9d;
     }
-    */
-    .active {
-        border-top: 3px solid aqua;
-        line-height: 64px !important;
+
+    .navbar-inverse .navbar-nav > li > a:hover {
         color: aqua !important;
+        border-top: 3px solid aqua !important;
+    }
+
+    .myActive {
+        color: aqua !important;
+        border-top: 3px solid aqua !important;
     }
 }
 
@@ -308,14 +311,15 @@ body.modal-open {
 
 .thumb {
     padding: 10px 0 10px 0;
-
 }
-.thumb img{
+
+.thumb img {
     cursor: pointer;
     margin: 0 auto;
     border: 5px solid white;
     border-radius: 3px;
 }
-#googleMap{
-    height:250px;
+
+#googleMap {
+    height: 250px;
 }

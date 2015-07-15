@@ -51,13 +51,13 @@
             });
             $(document).on("scroll", onScroll);
 
-            $(".button").on("click", function (e) {
+            $(".button2").on("click", function (e) {
                 e.preventDefault();
                 $('nav a').each(function () {
-                    $(this).removeClass('active');
+                    $(this).removeClass('myActive');
                 })
-                $(this).addClass("active");
-                var cipka = $($(this).attr('href')).position().top - 70;
+                $(this).addClass("myActive");
+                var cipka = $($(this).attr('href')).position().top - 69;
                 $("body,html").animate({
                     scrollTop: cipka
                 }, 1000);
@@ -75,17 +75,13 @@
             $('nav a').each(function () {
                 var currLink = $(this);
                 var refElement = $(currLink.attr("href"));
-                if ($(this).attr("href") == "#slide2") {
-                    var positionTop = refElement.position().top;
-                } else {
-                    var positionTop = refElement.position().top - 70;
-                }
+                var positionTop = refElement.position().top - 70;
                 if (positionTop <= scrollPos && positionTop + refElement.outerHeight() > scrollPos) {
-                    $('nav ul li a').removeClass("active");
-                    currLink.addClass("active");
+                    $('nav ul li a').removeClass("myActive");
+                    currLink.addClass("myActive");
                 }
                 else {
-                    currLink.removeClass("active");
+                    currLink.removeClass("myActive");
                 }
             });
         }
@@ -106,7 +102,7 @@
             </video>
 
             <a class="youtube" href="https://www.youtube.com/watch?v=Z1kulU8Yd10" role="button">
-                ZOBACZ NAS NA YOUTUBE
+                ZOBACZ WIĘCEJ
             </a>
             <span class="fa-stack" onclick="goTo()">
                 <i class="fa fa-angle-down fa-stack-1x"></i>
@@ -123,7 +119,7 @@
             <div class="container-fluid">
                 <div class="navbar-header">
                     <span class="logo">lumos</span>
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <button type="button2" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -133,7 +129,7 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li><a class="button2" href="#slide2">Page 2</a></li>
                         <li><a class="button2" href="#slide4">Page 444</a></li>
-                        <li><a class="button" href="#slide6">Page 6</a></li>
+                        <li><a class="button2" href="#slide7">Page 6</a></li>
                     </ul>
                 </div>
             </div>
@@ -242,7 +238,7 @@
                         <div class="flex">
                             <textarea placeholder="Opis problemu" rows="1" required></textarea>
                         </div>
-                        <button class="button2">Wyślij</button>
+                        <button class="button">Wyślij</button>
                     </form>
                 </div>
             </div>
@@ -258,7 +254,6 @@
             Waves.init();
             Waves.attach('.button', ['waves-button', 'waves-float']);
             Waves.attach('.button2', ['waves-float', 'waves-light']);
-            Waves.attach('.img-responsive', ['waves-float', 'waves-light']);
             $(window).load(function () {
                 $(".cover").height($(".myVideo").height());
             });
@@ -289,8 +284,8 @@
             });
             function initialize() {
                 var mapProp = {
-                    center: new google.maps.LatLng(51.508742, -0.120850),
-                    zoom: 5,
+                    center: new google.maps.LatLng(54.108427, 22.926719),
+                    zoom: 10,
                     mapTypeId: google.maps.MapTypeId.ROADMAP
                 };
                 var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
