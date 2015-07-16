@@ -73,14 +73,7 @@
     <Content Include="index.min.html">
       <DependentUpon>index.html</DependentUpon>
     </Content>
-    <Content Include="javascripts\bootstrap\bootstrap.js" />
-    <Content Include="javascripts\bootstrap\bootstrap.min.js" />
-    <Content Include="javascripts\bootstrap\npm.js" />
     <Content Include="javascripts\waves.js" />
-    <Content Include="stylesheets\bootstrap\bootstrap-theme.css" />
-    <Content Include="stylesheets\bootstrap\bootstrap-theme.min.css" />
-    <Content Include="stylesheets\bootstrap\bootstrap.css" />
-    <Content Include="stylesheets\bootstrap\bootstrap.min.css" />
     <Content Include="stylesheets\customForm.css">
       <DependentUpon>customForm.scss</DependentUpon>
     </Content>
@@ -120,8 +113,6 @@
       <DependentUpon>variables.css</DependentUpon>
     </Content>
     <Content Include="images\WP_20150217_033.ogv" />
-    <Content Include="stylesheets\bootstrap\bootstrap-theme.css.map" />
-    <Content Include="stylesheets\bootstrap\bootstrap.css.map" />
     <Content Include="fonts\lumos.ttf" />
     <Content Include="stylesheets\customForm.scss" />
     <Content Include="stylesheets\customForm.css.map">
