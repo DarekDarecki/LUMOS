@@ -58,28 +58,36 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="images\03.jpg" />
+    <Content Include="images\04.jpg" />
     <Content Include="images\34.jpg" />
     <Content Include="images\39.jpg" />
     <Content Include="images\58.jpg" />
     <Content Include="images\61.jpg" />
     <Content Include="images\84.jpg" />
+    <Content Include="images\chevron-left.png" />
+    <Content Include="images\intro.mp4" />
+    <Content Include="images\intro.webm" />
     <Content Include="images\lol.png" />
     <Content Include="images\slide1.jpg" />
     <Content Include="images\slide3.jpg" />
     <Content Include="images\slide5.jpg" />
-    <Content Include="images\WP_20150217_033.mp4" />
-    <Content Include="images\WP_20150217_033.webm" />
     <Content Include="index.html" />
     <Content Include="index.min.html">
       <DependentUpon>index.html</DependentUpon>
     </Content>
+    <Content Include="javascripts\jquery.fancybox.pack.js" />
     <Content Include="javascripts\waves.js" />
+    <Content Include="stylesheets\blank.gif" />
     <Content Include="stylesheets\customForm.css">
       <DependentUpon>customForm.scss</DependentUpon>
     </Content>
     <Content Include="stylesheets\customForm.min.css">
       <DependentUpon>customForm.css</DependentUpon>
     </Content>
+    <Content Include="stylesheets\fancybox_loading%402x.gif" />
+    <Content Include="stylesheets\fancybox_loading.gif" />
+    <Content Include="stylesheets\fancybox_overlay.png" />
+    <Content Include="stylesheets\jquery.fancybox.css" />
     <Content Include="stylesheets\main.css">
       <DependentUpon>main.scss</DependentUpon>
     </Content>
@@ -112,7 +120,6 @@
     <Content Include="stylesheets\variables.css.map">
       <DependentUpon>variables.css</DependentUpon>
     </Content>
-    <Content Include="images\WP_20150217_033.ogv" />
     <Content Include="fonts\lumos.ttf" />
     <Content Include="stylesheets\customForm.scss" />
     <Content Include="stylesheets\customForm.css.map">
@@ -122,6 +129,7 @@
     <Content Include="stylesheets\waves.css.map">
       <DependentUpon>waves.css</DependentUpon>
     </Content>
+    <Content Include="images\intro.ogv" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

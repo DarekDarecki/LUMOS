@@ -13,6 +13,10 @@
     transform: translate($x,$y);
 }
 
+html {
+    background-color: black;
+}
+
 body {
     overflow-x: hidden;
     background: #333;
@@ -124,11 +128,21 @@ body {
     padding-left: 50px;
 }
 
+.logo:hover {
+    text-decoration: none;
+    text-shadow: 0 0 10px aqua;
+}
+
+.logo:visited, .logo:focus {
+    color: aqua;
+    text-decoration: none;
+}
+
 .hideme {
     opacity: 0;
 }
 
-#slide2 {
+#oNas {
     background-color: black;
     color: #333333;
     margin: -3px auto;
@@ -160,16 +174,26 @@ body {
     background-size: cover;
 }
 
-#slide4 {
+#oferta {
     background-color: red;
     color: #333333;
     padding: 50px;
 }
 
-#slide42 {
+#galeria {
     background-color: red;
     color: #333333;
     padding: 50px 0 50px 0;
+}
+
+#partnerzy {
+    background-color: red;
+    padding: 50px 0 50px 0;
+    color: #333333;
+
+    .carousel-control {
+        width: 8%;
+    }
 }
 
 #slide5 {
@@ -185,9 +209,68 @@ body {
     background-size: cover;
 }
 
-#slide7 {
+#kontakt {
     background-color: black;
-    padding-top: 50px;
+    padding-top: 1px;
+    .text-center {
+        font-size: 30px;
+    }
+
+    table {
+        margin: 0 auto;
+        font-size: 20px;
+
+        td:first-child {
+            padding: 0 15px 0 5px;
+        }
+    }
+
+    form p {
+        font-size: 20px;
+    }
+}
+
+.fb-page {
+    float:right;
+    border:5px solid white;
+}
+
+footer {
+    background-color: $black;
+    position: relative;
+
+    .menuBottom {
+        width: 360px; //dobrać jak już będą fonty
+        margin: 0 auto;
+    }
+
+    .text-center {
+        position: absolute;
+        bottom: -25px;
+        left: 50%;
+        @include translate(-50%,0);
+        color: gray;
+        font-size: 9px;
+    }
+
+    ul {
+        margin: 0 auto;
+
+        li {
+            display: inline-block;
+            float: none;
+            padding: 10px;
+
+            a {
+                color: $white;
+
+                &:hover {
+                    text-decoration: none;
+                    color: $white;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -243,8 +326,8 @@ body {
 
 
 @media only screen and (min-width: 992px) {
-    .thumb img {
-        height: 185px;
+    .thumbnail2 {
+        max-height: 185px;
     }
 }
 
@@ -283,43 +366,57 @@ body {
     }
 }
 
-.modal-backdrop {
-    opacity: 0.9 !important;
-}
-
-.fade {
-    transition: opacity 1s linear !important;
-}
-
-.modal-body {
-    background-color: transparent;
-    padding: 0;
-    padding-left: 17px;
-    margin: 0 auto;
-
-    img {
-        margin: 0 auto;
-        box-shadow: 0 0 50px 3px black;
-        border: 3px solid aqua;
-    }
-}
-
-body.modal-open {
-    overflow: hidden;
-    padding-right: 0 !important;
-}
-
 .thumb {
-    padding: 10px 0 10px 0;
+    margin-top: 30px;
 }
 
 .thumb img {
     cursor: pointer;
     margin: 0 auto;
-    border: 5px solid white;
-    border-radius: 3px;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    @include translate(0,-50%);
+}
+
+.thumb img:hover {
+    opacity: 0.3;
 }
 
 #googleMap {
     height: 250px;
+    z-index: 1;
+}
+
+.zoom {
+    overflow: hidden;
+    height: 200px;
+    background-color: black;
+    border: 5px solid white;
+    border-radius: 3px;
+    position: relative;
+    z-index: 99;
+}
+
+.zoom .fa {
+    color: $white;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include translate(-50%, -50%);
+}
+
+.myPrev:hover {
+    background: url('../images/chev7.png') no-repeat center left;
+}
+
+.myNext:hover {
+    background: url('../images/chev7r.png') no-repeat center right;
+}
+
+.myClose {
+    background: url('../images/cross.png') no-repeat;
+    top: -12px;
+    right: -24px;
 }
