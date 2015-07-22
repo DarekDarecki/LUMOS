@@ -1,21 +1,24 @@
-﻿$base: #555;
-$text: #555;
-$invalid: #E91E63;
+﻿$base: aqua;
+$text: white;
+$heading:white;
+$invalid: red;
 $width: 2000px;
 $cubic: cubic-bezier(.64,.09,.08,1);
 
 form {
   font-family: 'roboto', sans-serif;
   width: 100%;
-  margin: 50px auto 0;
-  padding: 0 0 40px;
-  border-radius: 3px;
-  color: $text;
+  margin: 50px auto 50px;
+  padding: 10px;
+  border-radius: 5px;
+  color: $text !important;
+  border:5px solid white;
 }
 
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   font: inherit;
+  color:$heading;
   transition: transform 0.3s ease-in-out,
     font-size 0.3s ease-in-out,
     visibility 0.3s ease-in-out;
@@ -30,7 +33,7 @@ textarea {
   display: block;
   border: none;
   padding: 20px 0 10px;
-  border-bottom: solid 1px $base;
+  border-bottom: solid 1px $heading;
   background: linear-gradient(to bottom, rgba(255,255,255,0) 96%, $base 4%);
   background-position: -$width 0;
   background-size: $width 100%;
@@ -46,6 +49,7 @@ textarea {
     box-shadow: none;
     outline: none;
     background-position: 0 0;
+      border-bottom: solid 1px $base;
     &::-webkit-input-placeholder {
       font-size: 0.8em;
       transform: translateY(-20px);

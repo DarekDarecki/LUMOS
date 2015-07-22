@@ -5,6 +5,16 @@
     src: url('../fonts/lumos.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'BB';
+    src: url('../fonts/BebasNeue Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'BR';
+    src: url('../fonts/BebasNeue Regular.otf') format('opentype');
+}
+
 @mixin translate($x, $y) {
     -webkit-transform: translate($x,$y);
     -moz-transform: translate($x,$y);
@@ -21,6 +31,7 @@ body {
     overflow-x: hidden;
     background: #333;
     color: #fff;
+    font-family: Roboto;
 }
 
 .cover {
@@ -49,6 +60,9 @@ body {
 }
 
 .youtube {
+    font-family: Lato;
+    font-weight: bold;
+    font-size: 15px;
     color: white;
     z-index: 10;
     top: 50%;
@@ -57,14 +71,16 @@ body {
     position: absolute;
     border: 3px solid $white;
     text-align: center;
-    padding: 5px 20px 5px 20px;
+    padding: 5px 15px 5px 15px;
     text-decoration: none;
+    opacity: 0.3;
 }
 
 .youtube:hover {
     text-decoration: none;
     background-color: $white;
     color: $black;
+    opacity: 0.9;
 }
 
 .youtube:active {
@@ -73,6 +89,7 @@ body {
 }
 
 .fa-stack {
+    opacity: 0.3;
     color: $white;
     z-index: 11;
     position: absolute;
@@ -80,6 +97,7 @@ body {
     left: 50%;
     @include translate(-50%, 0);
     font-size: 33px;
+    cursor: pointer;
 }
 
 .fa-angle-down {
@@ -87,8 +105,7 @@ body {
 }
 
 .fa-stack:hover {
-    color: $black;
-    cursor: pointer;
+    opacity: 0.9;
 }
 
 .fixed {
@@ -99,12 +116,15 @@ body {
 }
 
 .navbar {
+    font-family: Lato;
+    font-weight: 900;
+    font-size: 14px;
     margin: 0;
     border-radius: 0 !important;
     height: 70px;
-    background-color: black;
+    background-color: $black;
     border: none;
-
+    box-shadow:0 0 10px 1px #333;
     .container-fluid {
         height: 70px;
     }
@@ -121,6 +141,7 @@ body {
 
 .logo {
     font-family: lumos;
+    font-weight: 500;
     font-size: 70px;
     color: aqua;
     top: -10px;
@@ -142,78 +163,98 @@ body {
     opacity: 0;
 }
 
+h2.title {
+    color: $white;
+    font-family: BB;
+    font-size: 60px;
+    letter-spacing: 1px;
+    text-align: center;
+    border-bottom: 1px dotted white;
+    margin-bottom: 30px;
+}
+
 #oNas {
     background-color: black;
     color: #333333;
     margin: -3px auto;
     overflow: hidden;
-    padding: 0 0 100px;
+    padding:0; 
 }
-
+.team{
+    margin-bottom:50px;
+}
 .team img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     float: left;
     max-width: 100%;
+    margin-right:20px;
 }
 
 .text {
     overflow: auto;
 }
 
-#slide3 {
-    background: url('../images/04.jpg') 50% 0 no-repeat fixed;
-    height: 400px;
+#slide1 {
+    background: url('../images/58.jpg') 50% 0 no-repeat fixed;
+    height: 470px;
     background-size: cover;
 }
 
-#slide32 {
+#slide2 {
     background: url('../images/392.jpg') 50% 0 no-repeat fixed;
     height: 400px;
     background-size: cover;
 }
-
-#oferta {
-    background-color: red;
-    color: #333333;
-    padding: 50px;
-}
-
-#galeria {
-    background-color: red;
-    color: #333333;
-    padding: 50px 0 50px 0;
-}
-
-#partnerzy {
-    background-color: red;
-    padding: 50px 0 50px 0;
-    color: #333333;
-
-    .carousel-control {
-        width: 8%;
-    }
-}
-
-#slide5 {
+#slide3 {
     background: url('../images/61.jpg') 50% 0 no-repeat fixed;
     height: 400px;
     background-size: cover;
 }
 
-#slide6 {
+#slide4 {
     background: url('../images/34.jpg') 50% 0 no-repeat fixed;
     height: 400px;
-    padding-top: 50px;
     background-size: cover;
 }
+#slide5 {
+    background: url('../images/84.jpg') 50% 0 no-repeat fixed;
+    height: 400px;
+    background-size: cover;
+}
+#oferta {
+    background-color: $black;
+    padding: 1px 0 50px 0;
+}
 
+#galeria {
+    background-color: $black;
+    padding: 1px 0 50px 0;
+}
+
+#partnerzy {
+    background-color: $black;
+    padding: 1px 0 50px 0;
+
+    .carousel-control {
+        width: 8%;
+    }
+}
 #kontakt {
     background-color: black;
     padding-top: 1px;
+
     .text-center {
-        font-size: 30px;
+        font-size: 20px;
+        color: $white;
+    }
+
+    .name {
+        font-size: 43px;
+        letter-spacing: 1px;
+        font-family: BB;
+        margin: 0;
     }
 
     table {
@@ -224,15 +265,32 @@ body {
             padding: 0 15px 0 5px;
         }
     }
+}
 
-    form p {
-        font-size: 20px;
-    }
+
+.sendForm {
+    font-family: Lato;
+    font-weight: bold;
+    border: 3px solid $white;
+    text-align: center;
+    padding: 5px 20px 5px 20px;
+    text-decoration: none;
+    background: none;
+    color: $white;
+    left: 50%;
+    @include translate(-50%, 0);
+    position: absolute;
+}
+
+.sendForm:hover {
+    text-decoration: none;
+    background-color: $white;
+    color: $black;
 }
 
 .fb-page {
-    float:right;
-    border:5px solid white;
+    border: 5px solid $white;
+    border-radius: 5px;
 }
 
 footer {
@@ -240,8 +298,10 @@ footer {
     position: relative;
 
     .menuBottom {
-        width: 360px; //dobrać jak już będą fonty
+        width: 345px;
         margin: 0 auto;
+        font-family: Lato;
+        font-size: 11px;
     }
 
     .text-center {
@@ -255,6 +315,7 @@ footer {
 
     ul {
         margin: 0 auto;
+        padding: 0;
 
         li {
             display: inline-block;
@@ -266,7 +327,7 @@ footer {
 
                 &:hover {
                     text-decoration: none;
-                    color: $white;
+                    color: lightgray;
                 }
             }
         }
@@ -306,7 +367,7 @@ footer {
     .navbar li a {
         padding: 0 15px 0 15px;
         line-height: 65px;
-        border-top: 3px solid transparent;
+        border-top: 4px solid transparent;
     }
 
     .navbar-inverse .navbar-nav > li > a:focus {
@@ -315,77 +376,13 @@ footer {
 
     .navbar-inverse .navbar-nav > li > a:hover {
         color: aqua !important;
-        border-top: 3px solid aqua !important;
+        border-top: 4px solid aqua !important;
     }
 
     .myActive {
         color: aqua !important;
-        border-top: 3px solid aqua !important;
+        border-top: 4px solid aqua !important;
     }
-}
-
-
-@media only screen and (min-width: 992px) {
-    .thumbnail2 {
-        max-height: 185px;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .modal-dialog {
-        margin: 0 auto;
-        max-width: 90%; //wielkość obrazka
-    }
-}
-
-
-@media only screen and (max-width: 991px) {
-    .thumb img {
-        height: 24vw;
-        cursor: pointer;
-    }
-
-    .thumb {
-        clear: right;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    .thumb img {
-        height: auto;
-        max-height: 350px;
-        cursor: pointer;
-    }
-
-    #slide42 .container {
-        padding: 0 15% 0 15%;
-    }
-
-    .modal-dialog {
-        margin: 0 auto;
-    }
-}
-
-.thumb {
-    margin-top: 30px;
-}
-
-.thumb img {
-    cursor: pointer;
-    margin: 0 auto;
-    min-height: 100%;
-    position: absolute;
-    top: 50%;
-    @include translate(0,-50%);
-}
-
-.thumb img:hover {
-    opacity: 0.3;
-}
-
-#googleMap {
-    height: 250px;
-    z-index: 1;
 }
 
 .zoom {
@@ -407,6 +404,30 @@ footer {
     @include translate(-50%, -50%);
 }
 
+    .thumb {
+        margin-top: 30px;
+    }
+
+    .thumb img {
+        cursor: pointer;
+        margin: 0 auto;
+        min-height: 100%;
+        position: absolute;
+        top: 50%;
+        @include translate(0,-50%);
+    }
+
+    .thumb img:hover {
+        opacity: 0.3;
+    }
+
+#googleMap {
+    height: 250px;
+    z-index: 1;
+}
+
+
+
 .myPrev:hover {
     background: url('../images/chev7.png') no-repeat center left;
 }
@@ -419,4 +440,29 @@ footer {
     background: url('../images/cross.png') no-repeat;
     top: -12px;
     right: -24px;
+}
+// PARTNERZY
+@media only screen and (max-width:1024px) {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+//FACEBOOK
+@media only screen and (max-width: 991px) {
+    .face {
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 699px) {
+    .zoom {
+        height: 28vw;
+        overflow: hidden;
+        background-color: black;
+        border: 5px solid white;
+        border-radius: 3px;
+        position: relative;
+        z-index: 99;
+    }
 }

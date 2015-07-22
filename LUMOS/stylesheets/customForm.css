@@ -1,13 +1,15 @@
 ﻿form {
   font-family: 'roboto', sans-serif;
   width: 100%;
-  margin: 50px auto 0;
-  padding: 0 0 40px;
-  border-radius: 3px;
-  color: #555; }
+  margin: 50px auto 50px;
+  padding: 10px;
+  border-radius: 5px;
+  color: white !important;
+  border: 5px solid white; }
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   font: inherit;
+  color: white;
   transition: transform 0.3s ease-in-out, font-size 0.3s ease-in-out, visibility 0.3s ease-in-out; }
 
 input, textarea {
@@ -18,8 +20,8 @@ input, textarea {
   display: block;
   border: none;
   padding: 20px 0 10px;
-  border-bottom: solid 1px #555;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #555 4%);
+  border-bottom: solid 1px white;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, aqua 4%);
   background-position: -2000px 0;
   background-size: 2000px 100%;
   background-repeat: no-repeat;
@@ -27,11 +29,12 @@ input, textarea {
   resize: none;
   overflow: hidden; }
   input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
-    color: #555; }
+    color: aqua; }
   input:focus, input:valid, textarea:focus, textarea:valid {
     box-shadow: none;
     outline: none;
-    background-position: 0 0; }
+    background-position: 0 0;
+    border-bottom: solid 1px aqua; }
     input:focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder, textarea:valid::-webkit-input-placeholder {
       font-size: 0.8em;
       transform: translateY(-20px);
@@ -58,23 +61,23 @@ input[type="email"] {
     visibility: visible !important;
     opacity: 1; }
   input[type="email"]:not([value=""]):focus::-webkit-input-placeholder {
-    color: #555; }
+    color: aqua; }
   input[type="email"]:not([value=""]):focus:not(:valid)::-webkit-input-placeholder {
-    color: #E91E63; }
+    color: red; }
   input[type="email"]:focus {
     background-position: 0 0; }
     input[type="email"]:focus:not(:valid):not([value=""]) {
-      border-bottom: solid 1px #E91E63;
-      background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #E91E63 4%); }
+      border-bottom: solid 1px red;
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, red 4%); }
   input[type="email"]:not(:focus):not(:valid):not([value=""]) {
-    border-bottom: solid 1px #E91E63;
+    border-bottom: solid 1px red;
     background-position: 0 0;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #E91E63 4%); }
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, red 4%); }
     input[type="email"]:not(:focus):not(:valid):not([value=""])::-webkit-input-placeholder {
-      color: #E91E63; }
+      color: red; }
     input[type="email"]:not(:focus):not(:valid):not([value=""]) ~ span.validation-text {
       visibility: visible;
-      color: #E91E63; }
+      color: red; }
 
 .flex {
   display: flex;

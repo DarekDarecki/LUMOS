@@ -2,13 +2,22 @@
   font-family: 'lumos';
   src: url('../fonts/lumos.ttf') format('truetype'); }
 
+@font-face {
+  font-family: 'BB';
+  src: url('../fonts/BebasNeue Bold.otf') format('opentype'); }
+
+@font-face {
+  font-family: 'BR';
+  src: url('../fonts/BebasNeue Regular.otf') format('opentype'); }
+
 html {
   background-color: black; }
 
 body {
   overflow-x: hidden;
   background: #333;
-  color: #fff; }
+  color: #fff;
+  font-family: Roboto; }
 
 .cover {
   background-color: black;
@@ -37,6 +46,9 @@ body {
   overflow: hidden; }
 
 .youtube {
+  font-family: Lato;
+  font-weight: bold;
+  font-size: 15px;
   color: white;
   z-index: 10;
   top: 50%;
@@ -49,19 +61,22 @@ body {
   position: absolute;
   border: 3px solid white;
   text-align: center;
-  padding: 5px 20px 5px 20px;
-  text-decoration: none; }
+  padding: 5px 15px 5px 15px;
+  text-decoration: none;
+  opacity: 0.3; }
 
 .youtube:hover {
   text-decoration: none;
   background-color: white;
-  color: black; }
+  color: black;
+  opacity: 0.9; }
 
 .youtube:active {
   text-decoration: none;
   color: white; }
 
 .fa-stack {
+  opacity: 0.3;
   color: white;
   z-index: 11;
   position: absolute;
@@ -72,14 +87,14 @@ body {
   -ms-transform: translate(-50%, 0);
   -o-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
-  font-size: 33px; }
+  font-size: 33px;
+  cursor: pointer; }
 
 .fa-angle-down {
   font-size: 50px; }
 
 .fa-stack:hover {
-  color: black;
-  cursor: pointer; }
+  opacity: 0.9; }
 
 .fixed {
   position: fixed;
@@ -88,11 +103,15 @@ body {
   width: 100%; }
 
 .navbar {
+  font-family: Lato;
+  font-weight: 900;
+  font-size: 14px;
   margin: 0;
   border-radius: 0 !important;
   height: 70px;
   background-color: black;
-  border: none; }
+  border: none;
+  box-shadow: 0 0 10px 1px #333; }
   .navbar .container-fluid {
     height: 70px; }
 
@@ -105,6 +124,7 @@ body {
 
 .logo {
   font-family: lumos;
+  font-weight: 500;
   font-size: 70px;
   color: aqua;
   top: -10px;
@@ -122,84 +142,126 @@ body {
 .hideme {
   opacity: 0; }
 
+h2.title {
+  color: white;
+  font-family: BB;
+  font-size: 60px;
+  letter-spacing: 1px;
+  text-align: center;
+  border-bottom: 1px dotted white;
+  margin-bottom: 30px; }
+
 #oNas {
   background-color: black;
   color: #333333;
   margin: -3px auto;
   overflow: hidden;
-  padding: 0 0 100px; }
+  padding: 0; }
+
+.team {
+  margin-bottom: 50px; }
 
 .team img {
   width: 200px;
   height: 200px;
   border-radius: 50%;
   float: left;
-  max-width: 100%; }
+  max-width: 100%;
+  margin-right: 20px; }
 
 .text {
   overflow: auto; }
 
-#slide3 {
-  background: url('../images/04.jpg') 50% 0 no-repeat fixed;
-  height: 400px;
+#slide1 {
+  background: url('../images/58.jpg') 50% 0 no-repeat fixed;
+  height: 470px;
   background-size: cover; }
 
-#slide32 {
+#slide2 {
   background: url('../images/392.jpg') 50% 0 no-repeat fixed;
   height: 400px;
   background-size: cover; }
 
-#oferta {
-  background-color: red;
-  color: #333333;
-  padding: 50px; }
-
-#galeria {
-  background-color: red;
-  color: #333333;
-  padding: 50px 0 50px 0; }
-
-#partnerzy {
-  background-color: red;
-  padding: 50px 0 50px 0;
-  color: #333333; }
-  #partnerzy .carousel-control {
-    width: 8%; }
-
-#slide5 {
+#slide3 {
   background: url('../images/61.jpg') 50% 0 no-repeat fixed;
   height: 400px;
   background-size: cover; }
 
-#slide6 {
+#slide4 {
   background: url('../images/34.jpg') 50% 0 no-repeat fixed;
   height: 400px;
-  padding-top: 50px;
   background-size: cover; }
+
+#slide5 {
+  background: url('../images/84.jpg') 50% 0 no-repeat fixed;
+  height: 400px;
+  background-size: cover; }
+
+#oferta {
+  background-color: black;
+  padding: 1px 0 50px 0; }
+
+#galeria {
+  background-color: black;
+  padding: 1px 0 50px 0; }
+
+#partnerzy {
+  background-color: black;
+  padding: 1px 0 50px 0; }
+  #partnerzy .carousel-control {
+    width: 8%; }
 
 #kontakt {
   background-color: black;
   padding-top: 1px; }
   #kontakt .text-center {
-    font-size: 30px; }
+    font-size: 20px;
+    color: white; }
+  #kontakt .name {
+    font-size: 43px;
+    letter-spacing: 1px;
+    font-family: BB;
+    margin: 0; }
   #kontakt table {
     margin: 0 auto;
     font-size: 20px; }
     #kontakt table td:first-child {
       padding: 0 15px 0 5px; }
-  #kontakt form p {
-    font-size: 20px; }
+
+.sendForm {
+  font-family: Lato;
+  font-weight: bold;
+  border: 3px solid white;
+  text-align: center;
+  padding: 5px 20px 5px 20px;
+  text-decoration: none;
+  background: none;
+  color: white;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  position: absolute; }
+
+.sendForm:hover {
+  text-decoration: none;
+  background-color: white;
+  color: black; }
 
 .fb-page {
-  float: right;
-  border: 5px solid white; }
+  border: 5px solid white;
+  border-radius: 5px; }
 
 footer {
   background-color: black;
   position: relative; }
   footer .menuBottom {
-    width: 360px;
-    margin: 0 auto; }
+    width: 345px;
+    margin: 0 auto;
+    font-family: Lato;
+    font-size: 11px; }
   footer .text-center {
     position: absolute;
     bottom: -25px;
@@ -212,7 +274,8 @@ footer {
     color: gray;
     font-size: 9px; }
   footer ul {
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding: 0; }
     footer ul li {
       display: inline-block;
       float: none;
@@ -221,7 +284,7 @@ footer {
         color: white; }
         footer ul li a:hover {
           text-decoration: none;
-          color: white; }
+          color: lightgray; }
 
 @media only screen and (max-width: 767px) {
   .navbar li a {
@@ -247,52 +310,40 @@ footer {
   .navbar li a {
     padding: 0 15px 0 15px;
     line-height: 65px;
-    border-top: 3px solid transparent; }
+    border-top: 4px solid transparent; }
 
   .navbar-inverse .navbar-nav > li > a:focus {
     color: #9d9d9d; }
 
   .navbar-inverse .navbar-nav > li > a:hover {
     color: aqua !important;
-    border-top: 3px solid aqua !important; }
+    border-top: 4px solid aqua !important; }
 
   .myActive {
     color: aqua !important;
-    border-top: 3px solid aqua !important; }
+    border-top: 4px solid aqua !important; }
  }
 
-@media only screen and (min-width: 992px) {
-  .thumbnail2 {
-    max-height: 185px; }
- }
+.zoom {
+  overflow: hidden;
+  height: 200px;
+  background-color: black;
+  border: 5px solid white;
+  border-radius: 3px;
+  position: relative;
+  z-index: 99; }
 
-@media only screen and (min-width: 768px) {
-  .modal-dialog {
-    margin: 0 auto;
-    max-width: 90%; }
- }
-
-@media only screen and (max-width: 991px) {
-  .thumb img {
-    height: 24vw;
-    cursor: pointer; }
-
-  .thumb {
-    clear: right; }
- }
-
-@media only screen and (max-width: 767px) {
-  .thumb img {
-    height: auto;
-    max-height: 350px;
-    cursor: pointer; }
-
-  #slide42 .container {
-    padding: 0 15% 0 15%; }
-
-  .modal-dialog {
-    margin: 0 auto; }
- }
+.zoom .fa {
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
 
 .thumb {
   margin-top: 30px; }
@@ -316,27 +367,6 @@ footer {
   height: 250px;
   z-index: 1; }
 
-.zoom {
-  overflow: hidden;
-  height: 200px;
-  background-color: black;
-  border: 5px solid white;
-  border-radius: 3px;
-  position: relative;
-  z-index: 99; }
-
-.zoom .fa {
-  color: white;
-  font-size: 40px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
-
 .myPrev:hover {
   background: url('../images/chev7.png') no-repeat center left; }
 
@@ -347,5 +377,27 @@ footer {
   background: url('../images/cross.png') no-repeat;
   top: -12px;
   right: -24px; }
+
+@media only screen and (max-width: 1024px) {
+  img {
+    max-width: 100%;
+    height: auto; }
+ }
+
+@media only screen and (max-width: 991px) {
+  .face {
+    margin-bottom: 25px; }
+ }
+
+@media only screen and (max-width: 699px) {
+  .zoom {
+    height: 28vw;
+    overflow: hidden;
+    background-color: black;
+    border: 5px solid white;
+    border-radius: 3px;
+    position: relative;
+    z-index: 99; }
+ }
 
 /*# sourceMappingURL=main.css.map */

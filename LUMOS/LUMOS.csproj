@@ -61,16 +61,25 @@
     <Content Include="images\04.jpg" />
     <Content Include="images\34.jpg" />
     <Content Include="images\39.jpg" />
+    <Content Include="images\392.jpg" />
     <Content Include="images\58.jpg" />
     <Content Include="images\61.jpg" />
     <Content Include="images\84.jpg" />
-    <Content Include="images\chevron-left.png" />
+    <Content Include="images\chev7.png" />
+    <Content Include="images\chev7r.png" />
+    <Content Include="images\cross.png" />
+    <Content Include="images\fire.png" />
     <Content Include="images\intro.mp4" />
     <Content Include="images\intro.webm" />
+    <Content Include="images\logos\bialystok.png" />
+    <Content Include="images\logos\metro.png" />
+    <Content Include="images\logos\niedz.png" />
+    <Content Include="images\logos\olszewski.png" />
+    <Content Include="images\logos\sok.png" />
+    <Content Include="images\logos\suwalki.png" />
+    <Content Include="images\logos\ums.png" />
+    <Content Include="images\logos\wosp.png" />
     <Content Include="images\lol.png" />
-    <Content Include="images\slide1.jpg" />
-    <Content Include="images\slide3.jpg" />
-    <Content Include="images\slide5.jpg" />
     <Content Include="index.html" />
     <Content Include="index.min.html">
       <DependentUpon>index.html</DependentUpon>
@@ -130,6 +139,8 @@
       <DependentUpon>waves.css</DependentUpon>
     </Content>
     <Content Include="images\intro.ogv" />
+    <Content Include="fonts\BebasNeue Bold.otf" />
+    <Content Include="fonts\BebasNeue Regular.otf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
