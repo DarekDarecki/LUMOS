@@ -1,14 +1,11 @@
 ﻿@font-face {
   font-family: 'lumos';
-  src: url('../fonts/lumos.ttf') format('truetype'); }
+  src: url('/fonts/lumos-webfont.eot');
+  src: url('/fonts/lumos-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/lumos-webfont.woff2') format('woff2'), url('/fonts/lumos-webfont.woff') format('woff'), url('/fonts/lumos-webfont.ttf') format('truetype'), url('/fonts/lumos-webfont.svg#lumos') format('svg'); }
 
 @font-face {
   font-family: 'BB';
   src: url('../fonts/BebasNeue Bold.otf') format('opentype'); }
-
-@font-face {
-  font-family: 'BR';
-  src: url('../fonts/BebasNeue Regular.otf') format('opentype'); }
 
 html {
   background-color: black; }
@@ -17,7 +14,8 @@ body {
   overflow-x: hidden;
   background: #333;
   color: #fff;
-  font-family: Roboto; }
+  font: 18px Lato;
+  letter-spacing: 0.2px; }
 
 .cover {
   background-color: black;
@@ -46,8 +44,8 @@ body {
   overflow: hidden; }
 
 .youtube {
-  font-family: Lato;
-  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
   font-size: 15px;
   color: white;
   z-index: 10;
@@ -61,7 +59,7 @@ body {
   position: absolute;
   border: 3px solid white;
   text-align: center;
-  padding: 5px 15px 5px 15px;
+  padding: 4px 10px 4px 10px;
   text-decoration: none;
   opacity: 0.3; }
 
@@ -69,13 +67,13 @@ body {
   text-decoration: none;
   background-color: white;
   color: black;
-  opacity: 0.9; }
+  opacity: 0.7; }
 
 .youtube:active {
   text-decoration: none;
   color: white; }
 
-.fa-stack {
+#movie .fa-stack {
   opacity: 0.3;
   color: white;
   z-index: 11;
@@ -90,17 +88,22 @@ body {
   font-size: 33px;
   cursor: pointer; }
 
-.fa-angle-down {
+#movie .fa-angle-down {
   font-size: 50px; }
 
-.fa-stack:hover {
-  opacity: 0.9; }
+#movie .fa-stack:hover {
+  opacity: 0.7; }
 
 .fixed {
   position: fixed;
   top: 0;
   z-index: 9;
   width: 100%; }
+
+a:focus {
+  outline: none;
+  text-decoration: none;
+  color: inherit; }
 
 .navbar {
   font-family: Lato;
@@ -127,7 +130,7 @@ body {
   font-weight: 500;
   font-size: 70px;
   color: aqua;
-  top: -10px;
+  top: 3px;
   position: absolute;
   padding-left: 50px; }
 
@@ -148,12 +151,12 @@ h2.title {
   font-size: 60px;
   letter-spacing: 1px;
   text-align: center;
-  border-bottom: 1px dotted white;
+  box-shadow: 3px 3px 1px 10px inset white;
   margin-bottom: 30px; }
 
 #oNas {
   background-color: black;
-  color: #333333;
+  color: #b0b0b0;
   margin: -3px auto;
   overflow: hidden;
   padding: 0; }
@@ -199,11 +202,36 @@ h2.title {
 
 #oferta {
   background-color: black;
-  padding: 1px 0 50px 0; }
+  padding: 1px 0 50px 0;
+  color: #b0b0b0;
+  text-align: justify; }
+
+.goToContact {
+  color: #b0b0b0;
+  cursor: pointer;
+  text-decoration: none; }
+
+.goToContact:hover {
+  color: white;
+  text-decoration: none; }
+
+.goToContact:active {
+  text-decoration: none; }
+
+.goToContact .fa-stack {
+  font-size: 23px; }
+
+.goToContact .fa-angle-down {
+  font-size: 40px; }
+
+#oferta .text-center {
+  font-size: 13px; }
 
 #galeria {
   background-color: black;
   padding: 1px 0 50px 0; }
+  #galeria .title {
+    margin-bottom: 0; }
 
 #partnerzy {
   background-color: black;
@@ -213,37 +241,44 @@ h2.title {
 
 #kontakt {
   background-color: black;
-  padding-top: 1px; }
-  #kontakt .text-center {
+  padding-top: 1px;
+  color: #9d9d9d; }
+  #kontakt h4 {
     font-size: 20px;
     color: white; }
+  #kontakt i {
+    color: white; }
+  #kontakt .fa-facebook-official {
+    color: #3a5795; }
   #kontakt .name {
     font-size: 43px;
     letter-spacing: 1px;
     font-family: BB;
-    margin: 0; }
+    margin: 0;
+    color: white; }
   #kontakt table {
     margin: 0 auto;
     font-size: 20px; }
+    #kontakt table a {
+      color: #b0b0b0; }
+    #kontakt table a:hover {
+      color: #3a5795;
+      text-decoration: none; }
     #kontakt table td:first-child {
       padding: 0 15px 0 5px; }
 
+.writeToUs {
+  margin-top: 50px; }
+
 .sendForm {
-  font-family: Lato;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   border: 3px solid white;
   text-align: center;
   padding: 5px 20px 5px 20px;
   text-decoration: none;
   background: none;
-  color: white;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-  -moz-transform: translate(-50%, 0);
-  -ms-transform: translate(-50%, 0);
-  -o-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
-  position: absolute; }
+  color: white; }
 
 .sendForm:hover {
   text-decoration: none;
@@ -258,13 +293,18 @@ footer {
   background-color: black;
   position: relative; }
   footer .menuBottom {
-    width: 345px;
-    margin: 0 auto;
+    position: absolute;
     font-family: Lato;
-    font-size: 11px; }
+    font-size: 10px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0); }
   footer .text-center {
     position: absolute;
-    bottom: -25px;
+    bottom: -50px;
     left: 50%;
     -webkit-transform: translate(-50%, 0);
     -moz-transform: translate(-50%, 0);
@@ -284,13 +324,14 @@ footer {
         color: white; }
         footer ul li a:hover {
           text-decoration: none;
-          color: lightgray; }
+          color: #b0b0b0; }
 
 @media only screen and (max-width: 767px) {
   .navbar li a {
     background-color: black; }
     .navbar li a:hover {
-      background-color: aqua !important; }
+      background-color: black !important;
+      color: aqua !important; }
 
   .navbar ul {
     margin: 0;
@@ -367,16 +408,49 @@ footer {
   height: 250px;
   z-index: 1; }
 
-.myPrev:hover {
-  background: url('../images/chev7.png') no-repeat center left; }
+.myPrev:after {
+  position: absolute;
+  font-family: FontAwesome;
+  font-size: 40px;
+  content: "\f053";
+  color: white;
+  opacity: 0.3;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%); }
 
-.myNext:hover {
-  background: url('../images/chev7r.png') no-repeat center right; }
+.myNext:after {
+  position: absolute;
+  font-family: FontAwesome;
+  font-size: 40px;
+  content: "\f054";
+  color: white;
+  opacity: 0.3;
+  left: 100%;
+  top: 50%;
+  -webkit-transform: translate(-100%, -50%);
+  -moz-transform: translate(-100%, -50%);
+  -ms-transform: translate(-100%, -50%);
+  -o-transform: translate(-100%, -50%);
+  transform: translate(-100%, -50%); }
 
-.myClose {
-  background: url('../images/cross.png') no-repeat;
-  top: -12px;
-  right: -24px; }
+.myNext:hover:after, .myPrev:hover:after {
+  opacity: 0.7; }
+
+.myClose:after {
+  font-size: 37px;
+  position: absolute;
+  font-family: FontAwesome;
+  content: "\f00d";
+  color: white;
+  opacity: 0.3; }
+
+.myClose:hover:after {
+  color: red;
+  opacity: 0.6; }
 
 @media only screen and (max-width: 1024px) {
   img {
@@ -399,5 +473,59 @@ footer {
     position: relative;
     z-index: 99; }
  }
+
+@media only screen and (max-width: 767px) {
+  #partnerzy img {
+    padding: 10px 0 10px 0; }
+
+  #movie {
+    display: none; }
+ }
+
+@media only screen and (max-width: 580px) {
+  .team img {
+    float: none;
+    position: relative;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    margin-bottom: 20px; }
+
+  .text {
+    margin: 0 20px 0 20px;
+    text-align: justify; }
+ }
+
+.loader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: #18191b;
+  /*
+    p{
+        position: relative;
+        font-family:Lato;
+        color:#723c32;
+        font-size:13px;
+        z-index: 9999;
+        top:14%;
+    }
+
+    */ }
+  .loader img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
 
 /*# sourceMappingURL=main.css.map */

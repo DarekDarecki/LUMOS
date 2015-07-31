@@ -7,19 +7,18 @@ $cubic: cubic-bezier(.64,.09,.08,1);
 
 form {
   font-family: 'roboto', sans-serif;
-  font-size:15px;
   width: 100%;
-  margin: 50px auto 50px;
+  font-size:15px;
+  margin: 0 auto 50px;
   padding: 10px;
   border-radius: 5px;
   color: $text !important;
   border:5px solid white;
+ // position:relative;
 }
-.ajaxform{
-    margin-top:0;
-}
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
   font: inherit;
   color:$heading;
   -moz-transition: transform 0.3s ease-in-out,
@@ -53,7 +52,7 @@ textarea {
   transition: background 0.3s $cubic;
   resize: none;
   overflow: hidden; 
-  &:focus::-webkit-input-placeholder {
+  &:focus:-ms-input-placeholder {
     color: $base;
   }  
   &:focus, 
@@ -62,7 +61,7 @@ textarea {
     outline: none;
     background-position: 0 0;
       border-bottom: solid 1px $base;
-    &::-webkit-input-placeholder {
+    &:-ms-input-placeholder {
       font-size: 0.8em;
       -o-transform: translateY(-20px);
       -moz-transform: translateY(-20px);
@@ -93,7 +92,7 @@ input[type="email"] {
     transition: color 0.3s ease-in-out;
   }
   &:not([value=""]) {
-    &::-webkit-input-placeholder {
+    &:-ms-input-placeholder {
       font-size: 0.8em;
       -moz-transform: translateY(-20px);
       -o-transform: translateY(-20px);
@@ -101,10 +100,10 @@ input[type="email"] {
       visibility: visible !important;
       opacity: 1;
     }
-    &:focus::-webkit-input-placeholder {
+    &:focus:-ms-input-placeholder {
       color: $base;
     }
-    &:focus:not(:valid)::-webkit-input-placeholder {
+    &:focus:not(:valid):-ms-input-placeholder {
       color: $invalid;
     }
   }
@@ -116,7 +115,7 @@ input[type="email"] {
     }
   }
   &:not(:focus):not(:valid):not([value=""]) {
-    &::-webkit-input-placeholder {
+    &:-ms-input-placeholder {
       color: $invalid;
     }
     border-bottom: solid 1px $invalid;

@@ -2,22 +2,23 @@
 <html lang="pl">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-2" />
     <meta name="description" content="fireshow Suwałki pokaz taniec z ogniem lumos plucie iskry" />
     <title>LUMOS - fireshow Suwałki</title>
     <link rel="shortcut icon" type="image/png" href="images/fire.png" />
-    <link href='http://fonts.googleapis.com/css?family=Roboto:500,400,100,300,900' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link href="stylesheets/jquery.fancybox.css" rel="stylesheet" />
-    <link rel="stylesheet" href="stylesheets/variables.min.css" />
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link href="stylesheets/main.min.css" rel="stylesheet" />
     <link href="stylesheets/customForm.min.css" rel="stylesheet" />
-    <link href="stylesheets/waves.min.css" rel="stylesheet" />
 </head>
 
 <body>
+    <div class="loader"><img class="img-responsive" src="images/fire-loading-gif-1835748.gif" />
+<!-- <p class="text-center">Trwa ładowanie strony...<p>-->
+        
+    </div>
     <div id="movie">
         <div class="wrapper">
             <div class="cover"></div>
@@ -25,13 +26,13 @@
                 <source src="images/intro.webm" type="video/webm" />
                 <source src="images/intro.mp4" type="video/mp4" />
                 <source src="images/intro.ogv" type="video/ogg" />
-                Your browser does not support the video element.
+                Twoja przeglądarka uniemożliwia oglądanie video.
             </video>
 
             <a class="youtube" href="https://www.youtube.com/watch?v=Z1kulU8Yd10" role="button">
                 ZOBACZ WIĘCEJ
             </a>
-            <span class="fa-stack" onclick="goTo(event)">
+            <span class="fa-stack down" onclick="goTo(event)">
                 <i class="fa fa-angle-down fa-stack-1x"></i>
                 <i class="fa fa-circle-thin fa-stack-2x"></i>
             </span>
@@ -64,13 +65,13 @@
 
     <div id="oNas">
         <div class="content">
-            <h2 class="title">Nasza grupa</h2>
-            <div class="container">
+            <h2 class="title">O nas</h2>
+            <div class="container hideme">
                 <div class="row">
                     <div class="col-md-6  col-sm-12 team clearfix hideme">
                         <img src="images/lol.png" />
                         <div class="text">
-                            ąćłLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                            ąćłLorem Ę ę ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-12 team clearfix hideme">
@@ -97,7 +98,32 @@
 
     <div id="oferta">
         <h2 class="title">OFERTA</h2>
-
+        <div class="container hideme">
+            <p>Chcielibyśmy Państwu zaoferować pokazy tańca z ogniem. Są to profesjonalnie przygotowane spektakle łączące taniec oraz odpowiednią technikę manipulowania płonącym sprzętem. W swoim repertuarze posiadamy pokazy zarówno dynamiczne, z dużą ilością ruchu na scenie i rytmiczną muzyką jak i te bardziej subtelne i zmysłowe. Odpowiednio dobrane pokazy uświetnią :</p>
+            <ul>
+                <li>wesela</li>
+                <li>imprezy klubowe</li>
+                <li>imprezy okolicznościowe</li>
+                <li>bale</li>
+                <li>festyny</li>
+                <li>dni miast</li>
+                <li>koncerty</li>
+                <li>juwenalia</li>
+                <li>itp.</li>
+            </ul>
+            <p>Nasze pokazy wykonujemy najczęściej w grupie 2-4 osób ale jeśli istnieje taka potrzeba jesteśmy w stanie zapewnić większą ilość osób. Czas trwania naszych pokazów najczęściej oscyluje w granicach 10 - 15 min. W naszych pokazach używamy różnych sprzętów ogniowych oraz kostiumów. Wykorzystujemy POI (płonące kulki zawieszone na łańcuchach), warkocze (spektakularne poi o długości 50cm), kij ogniowy, wachlarze, szeroko pojętą manipulację ogniem (plucie, "głaskanie", połykanie ognia, etc.), pirotechnikę oraz różnego rodzaju widowiskowe iskry (trzy różne typy iskier, od delikatnych podkreślających ruch płonącego sprzętu po kilkunastometrowe wielkie iskry). W trosce o bezpieczeństwo zarówno nasze jak i naszych widzów stosujemy sprawdzony sprzęt, posiadamy odpowiednie zabezpieczenia oraz środki gaśnicze.</p>
+            <p>Biorąc pod uwagę to, że każdy pokaz traktujemy indywidualnie i staramy się go jak najlepiej dopasować do potrzeb klienta zapraszamy do kontaktu z nami w celu ustalenia szczegółów.</p>
+            <br /><div class="text-center">
+                <a class="goToContact">
+                    Skontaktuj się z nami!
+                    <br />
+                    <span class="fa-stack" onclick="goToContact(event)">
+                        <i class="fa fa-angle-down fa-stack-1x"></i>
+                        <i class="fa fa-circle-thin fa-stack-2x"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
     </div>
 
 
@@ -107,14 +133,30 @@
     <div id="galeria">
         <div class="content">
             <h2 class="title">Galeria</h2>
-            <div class="container">
+            <div class="container hideme">
                 <div class="row">
                     <div class="col-lg-10 col-lg-offset-1">
+                        <div class="col-md-4 col-xs-6 thumb">
+                            <a class="thumbnail2 fancybox" href="images/02.jpg" rel="group">
+                                <div class="zoom">
+                                    <i class="fa fa-search-plus"></i>
+                                    <img class="img-responsive" src="images/02.jpg" alt="">
+                                </div>
+                            </a>
+                        </div>
                         <div class="col-md-4 col-xs-6 thumb">
                             <a class="thumbnail2 fancybox" href="images/03.jpg" rel="group">
                                 <div class="zoom">
                                     <i class="fa fa-search-plus"></i>
                                     <img class="img-responsive" src="images/03.jpg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-xs-6 thumb">
+                            <a class="thumbnail2 fancybox" href="images/23.jpg" rel="group">
+                                <div class="zoom">
+                                    <i class="fa fa-search-plus"></i>
+                                    <img class="img-responsive" src="images/23.jpg" alt="">
                                 </div>
                             </a>
                         </div>
@@ -127,10 +169,34 @@
                             </a>
                         </div>
                         <div class="col-md-4 col-xs-6 thumb">
-                            <a class="thumbnail2 fancybox" href="images/39.jpg" rel="group">
+                            <a class="thumbnail2 fancybox" href="images/41.jpg" rel="group">
                                 <div class="zoom">
                                     <i class="fa fa-search-plus"></i>
-                                    <img class="img-responsive" src="images/39.jpg" alt="">
+                                    <img class="img-responsive" src="images/41.jpg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-xs-6 thumb">
+                            <a class="thumbnail2 fancybox" href="images/50.jpg" rel="group">
+                                <div class="zoom">
+                                    <i class="fa fa-search-plus"></i>
+                                    <img class="img-responsive" src="images/50.jpg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-xs-6 thumb">
+                            <a class="thumbnail2 fancybox" href="images/57.jpg" rel="group">
+                                <div class="zoom">
+                                    <i class="fa fa-search-plus"></i>
+                                    <img class="img-responsive" src="images/57.jpg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-xs-6 thumb">
+                            <a class="thumbnail2 fancybox" href="images/61.jpg" rel="group">
+                                <div class="zoom">
+                                    <i class="fa fa-search-plus"></i>
+                                    <img class="img-responsive" src="images/61.jpg" alt="">
                                 </div>
                             </a>
                         </div>
@@ -143,6 +209,30 @@
                             </a>
                         </div>
                         <div class="col-md-4 col-xs-6 thumb">
+                            <a class="thumbnail2 fancybox" href="images/88.jpg" rel="group">
+                                <div class="zoom">
+                                    <i class="fa fa-search-plus"></i>
+                                    <img class="img-responsive" src="images/88.jpg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-xs-6 thumb">
+                            <a class="thumbnail2 fancybox" href="images/70.jpg" rel="group">
+                                <div class="zoom">
+                                    <i class="fa fa-search-plus"></i>
+                                    <img class="img-responsive" src="images/70.jpg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-xs-6 thumb">
+                            <a class="thumbnail2 fancybox" href="images/90.jpg" rel="group">
+                                <div class="zoom">
+                                    <i class="fa fa-search-plus"></i>
+                                    <img class="img-responsive" src="images/90.jpg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-xs-6 thumb">
                             <a class="thumbnail2 fancybox" href="images/04.jpg" rel="group">
                                 <div class="zoom">
                                     <i class="fa fa-search-plus"></i>
@@ -151,10 +241,18 @@
                             </a>
                         </div>
                         <div class="col-md-4 col-xs-6 thumb">
-                            <a class="thumbnail2 fancybox" href="images/61.jpg" rel="group">
+                            <a class="thumbnail2 fancybox" href="images/91.jpg" rel="group">
                                 <div class="zoom">
                                     <i class="fa fa-search-plus"></i>
-                                    <img class="img-responsive" src="images/61.jpg" alt="">
+                                    <img class="img-responsive" src="images/91.jpg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-xs-6 thumb">
+                            <a class="thumbnail2 fancybox" href="images/99.jpg" rel="group">
+                                <div class="zoom">
+                                    <i class="fa fa-search-plus"></i>
+                                    <img class="img-responsive" src="images/99.jpg" alt="">
                                 </div>
                             </a>
                         </div>
@@ -169,7 +267,7 @@
 
     <div id="partnerzy">
         <h2 class="title">Partnerzy i klienci</h2>
-        <div class="content">
+        <div class="content hideme">
             <div id="carousel-example-generic" class="carousel slide">
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner">
@@ -222,6 +320,20 @@
                             </div>
                         </div>
                     </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-sm-3 col-xs-6">
+                                <a href="https://www.facebook.com/MacekFoto">
+                                    <img src="images/logos/macek.png" alt="" />
+                                </a>
+                            </div>
+                            <div class="col-sm-3 col-xs-6">
+                                <a href="https://www.facebook.com/MaciejTarasiewiczFF">
+                                    <img src="images/logos/ff.png" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                     <!-- Controls -->
                     <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
                         <span class="glyphicon glyphicon-chevron-left"></span>
@@ -239,7 +351,7 @@
 
     <div id="kontakt">
         <h2 class="title">Kontakt</h2>
-        <div class="container">
+        <div class="container hideme">
             <div class="row">
                 <div class="col-md-6">
                     <p class="text-center name">Dariusz Farancewicz</p>
@@ -276,21 +388,34 @@
                             <td><a href="https://www.facebook.com/karolka.slu">faceboook</a></td>
                         </tr>
                     </table>
-                    <form>
-                        <p class="text-center">Napisz do nas</p>
-                        <input placeholder="Imię i nazwisko" type="text" value="" required>
-                        <input placeholder="Adres e-mail" type="email" onblur="this.setAttribute('value', this.value);" value="" required>
+                    <h4 class="text-center writeToUs">Napisz do nas</h4>
+                    <form class='ajaxform' action="index.php" method="post">
+                        <input name="temat" placeholder="Imię i nazwisko" type="text" value="" required>
+                        <input name="email" placeholder="Adres e-mail" type="email" onblur="this.setAttribute('value', this.value);" value="" required>
                         <span class="validation-text">Proszę wpisać odpowiedni adres.</span>
                         <div class="flex">
-                            <textarea placeholder="Treść wiadomości" rows="3" required></textarea>
+                            <textarea name="tresc" placeholder="Treść wiadomości" rows="3" required></textarea>
                         </div>
-                        <button class="sendForm">WYŚLIJ</button>
+                        <div class="text-center"><button class="sendForm text-center" type="submit">WYŚLIJ</button></div>
+
                     </form>
+                    <?php
+
+                    $adres = 'daro1502@o2.pl';
+                    @$email = $_POST['email'];
+                    @$tresc = $_POST['tresc'];
+                    @$temat = $_POST['temat'];
+                    $header = 	"From: $email";
+                    if($_POST['email'] AND $_POST['temat'] AND $_POST['tresc'])
+                    {
+                    mail($adres, $temat, $tresc, $header);
+                    }
+                    ?>
                 </div>
                 <div class="col-md-6 face">
                     <div class="text-center">
                         <h4 class="text-center">Polub nas na Facebooku i bądź na bieżąco</h4>
-                        <div class="fb-page" data-href="https://www.facebook.com/lumosski" data-width="500" data-height="717" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/lumosski"><a href="https://www.facebook.com/lumosski">LUMOS</a></blockquote></div></div>
+                        <div class="fb-page" data-href="https://www.facebook.com/lumosski" data-width="500" data-height="678" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/lumosski"><a href="https://www.facebook.com/lumosski">LUMOS</a></blockquote></div></div>
                     </div>
                 </div>
             </div>
@@ -314,7 +439,6 @@
     </footer>
 
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="javascripts/waves.js"></script>
     <script src="javascripts/jquery.fancybox.pack.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="http://maps.googleapis.com/maps/api/js"></script>
@@ -347,7 +471,7 @@
             $(window).scroll(function () {
                 onScroll();
                 $('.hideme').each(function (i) {
-                    var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+                    var bottom_of_object = $(this).offset().top;
                     var bottom_of_window = $(window).scrollTop() + $(window).height();
                     if (bottom_of_window > bottom_of_object) {
 
@@ -367,15 +491,29 @@
                     scrollTop: pos
                 }, 1000);
             });
-            Waves.init();
-            Waves.attach('.button', ['waves-button', 'waves-float']);
-            Waves.attach('.button2', ['waves-float', 'waves-light']);
-            Waves.attach('.sendForm', ['waves-float', 'waves-light']);
+
+            jQuery('.ajaxform').submit(function () {
+
+                $.ajax({
+                    url: $(this).attr('action'),
+                    type: $(this).attr('method'),
+                    data: $(this).serialize(),
+                    success: function (data) {
+                        alert('Email został wysłany! Dziękujemy :)');
+                    },
+                    error: function () {
+                        alert('Coś poszło nie tak, może spróbuj jeszcze raz :(');
+                    }
+                });
+
+                return false;
+            });
 
         });
 
         $(window).load(function () {
             $(".cover").height($(".myVideo").height());
+            $(".loader").fadeOut("slow");
         });
         $(window).resize(function () {
             $(".cover").height($(".myVideo").height());
@@ -387,15 +525,20 @@
                 scrollTop: $("#oNas").position().top - 70
             }, 1000);
         }
-
+        function goToContact(e) {
+            e.preventDefault();
+            $("body,html").animate({
+                scrollTop: $("#kontakt").position().top - 70
+            }, 1000);
+        }
         function onScroll(event) {
             var scrollPos = $(document).scrollTop();
-            $('nav a').each(function () {
+            $('.nav a').each(function () {
                 var currLink = $(this);
                 var refElement = $(currLink.attr("href"));
                 var positionTop = refElement.position().top - 70;
                 if (positionTop <= scrollPos && positionTop + refElement.outerHeight() > scrollPos) {
-                    $('nav ul li a').removeClass("myActive");
+                    $('.nav ul li a').removeClass("myActive");
                     currLink.addClass("myActive");
                 }
                 else {

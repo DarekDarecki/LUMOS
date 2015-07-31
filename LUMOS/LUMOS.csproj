@@ -57,6 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="fonts\lumos-webfont.svg" />
     <Content Include="images\03.jpg" />
     <Content Include="images\04.jpg" />
     <Content Include="images\34.jpg" />
@@ -65,13 +66,13 @@
     <Content Include="images\58.jpg" />
     <Content Include="images\61.jpg" />
     <Content Include="images\84.jpg" />
-    <Content Include="images\chev7.png" />
-    <Content Include="images\chev7r.png" />
-    <Content Include="images\cross.png" />
+    <Content Include="images\fire-loading-gif-1835748.gif" />
     <Content Include="images\fire.png" />
     <Content Include="images\intro.mp4" />
     <Content Include="images\intro.webm" />
     <Content Include="images\logos\bialystok.png" />
+    <Content Include="images\logos\ff.png" />
+    <Content Include="images\logos\macek.png" />
     <Content Include="images\logos\metro.png" />
     <Content Include="images\logos\niedz.png" />
     <Content Include="images\logos\olszewski.png" />
@@ -80,12 +81,12 @@
     <Content Include="images\logos\ums.png" />
     <Content Include="images\logos\wosp.png" />
     <Content Include="images\lol.png" />
+    <Content Include="images\page-loader.gif" />
     <Content Include="index.html" />
     <Content Include="index.min.html">
       <DependentUpon>index.html</DependentUpon>
     </Content>
     <Content Include="javascripts\jquery.fancybox.pack.js" />
-    <Content Include="javascripts\waves.js" />
     <Content Include="stylesheets\blank.gif" />
     <Content Include="stylesheets\customForm.css">
       <DependentUpon>customForm.scss</DependentUpon>
@@ -96,24 +97,24 @@
     <Content Include="stylesheets\fancybox_loading%402x.gif" />
     <Content Include="stylesheets\fancybox_loading.gif" />
     <Content Include="stylesheets\fancybox_overlay.png" />
+    <Content Include="stylesheets\formMoz.css">
+      <DependentUpon>formMoz.scss</DependentUpon>
+    </Content>
+    <Content Include="stylesheets\formMoz.min.css">
+      <DependentUpon>formMoz.css</DependentUpon>
+    </Content>
+    <Content Include="stylesheets\formMS.css">
+      <DependentUpon>formMS.scss</DependentUpon>
+    </Content>
+    <Content Include="stylesheets\formMS.min.css">
+      <DependentUpon>formMS.css</DependentUpon>
+    </Content>
     <Content Include="stylesheets\jquery.fancybox.css" />
     <Content Include="stylesheets\main.css">
       <DependentUpon>main.scss</DependentUpon>
     </Content>
     <Content Include="stylesheets\main.min.css">
       <DependentUpon>main.css</DependentUpon>
-    </Content>
-    <Content Include="stylesheets\variables.css">
-      <DependentUpon>variables.scss</DependentUpon>
-    </Content>
-    <Content Include="stylesheets\variables.min.css">
-      <DependentUpon>variables.css</DependentUpon>
-    </Content>
-    <Content Include="stylesheets\waves.css">
-      <DependentUpon>waves.scss</DependentUpon>
-    </Content>
-    <Content Include="stylesheets\waves.min.css">
-      <DependentUpon>waves.css</DependentUpon>
     </Content>
     <Content Include="Web.config" />
   </ItemGroup>
@@ -125,22 +126,25 @@
     <Content Include="stylesheets\main.css.map">
       <DependentUpon>main.css</DependentUpon>
     </Content>
-    <Content Include="stylesheets\variables.scss" />
-    <Content Include="stylesheets\variables.css.map">
-      <DependentUpon>variables.css</DependentUpon>
-    </Content>
     <Content Include="fonts\lumos.ttf" />
     <Content Include="stylesheets\customForm.scss" />
     <Content Include="stylesheets\customForm.css.map">
       <DependentUpon>customForm.css</DependentUpon>
     </Content>
-    <Content Include="stylesheets\waves.scss" />
-    <Content Include="stylesheets\waves.css.map">
-      <DependentUpon>waves.css</DependentUpon>
-    </Content>
     <Content Include="images\intro.ogv" />
     <Content Include="fonts\BebasNeue Bold.otf" />
-    <Content Include="fonts\BebasNeue Regular.otf" />
+    <Content Include="stylesheets\formMoz.scss" />
+    <Content Include="stylesheets\formMoz.css.map">
+      <DependentUpon>formMoz.css</DependentUpon>
+    </Content>
+    <Content Include="stylesheets\formMS.scss" />
+    <Content Include="stylesheets\formMS.css.map">
+      <DependentUpon>formMS.css</DependentUpon>
+    </Content>
+    <Content Include="fonts\lumos-webfont.eot" />
+    <Content Include="fonts\lumos-webfont.ttf" />
+    <Content Include="fonts\lumos-webfont.woff" />
+    <Content Include="fonts\lumos-webfont.woff2" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
